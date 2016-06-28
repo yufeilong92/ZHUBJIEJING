@@ -1,0 +1,3 @@
+include ':app', ':zhbj03text', 'Islidingmenu'
+include ':library'
+include ':library_SlidingMenu'

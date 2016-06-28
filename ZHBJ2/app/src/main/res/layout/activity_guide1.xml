@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--有viewper-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!--有开始体验-->
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="60dp"
+        android:background="@drawable/selecttor_btn_red"
+        android:padding="20dp"
+        android:text="开始体验"
+
+        android:textColor="#000000" />
+    <!--有小圆点-->
+    <!--属性说明 pageColor 默认颜色-->
+    <!--fillColor小红点的颜色-->
+    <!--radius小红点的大小-->
+    <!--strokewidth 边线的宽度-->
+    <!--使用代码来创建灰点-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp">
+
+        <LinearLayout
+            android:id="@+id/lv_gray_dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        </LinearLayout>
+            <ImageView
+                android:id="@+id/iv_red_dot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_red_dot" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

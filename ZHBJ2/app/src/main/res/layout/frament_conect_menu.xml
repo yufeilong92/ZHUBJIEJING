@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--控件-->
+    <com.example.administrator.zhbj.Utils.NoScrollVirwPager
+        android:id="@+id/vp_viewpager1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp" />
+
+    <!--android:weightSum="将每个水平行均分几份-->
+    <RadioGroup
+        android:id="@+id/rg_raidogroup"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:checkedButton="@+id/rb_home"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <RadioButton
+            style="@style/RadioButtom_Buttom"
+            android:drawableTop="@drawable/selector_radiobtn_home"
+             android:id="@+id/rb_home"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rb_new_conter"
+            style="@style/RadioButtom_Buttom"
+            android:drawableTop="@drawable/selector_radiobtn_new_connect"
+            android:text="新闻中心" />
+        <RadioButton
+            android:id="@+id/rb_smart_service"
+            style="@style/RadioButtom_Buttom"
+            android:drawableTop="@drawable/selector_radiobtn_smart_service"
+            android:text="智慧服务" />
+
+        <RadioButton
+            android:id="@+id/rb_gov_affair"
+            style="@style/RadioButtom_Buttom"
+            android:drawableTop="@drawable/selector_radiobtn_gov_afffair"
+            android:text="政务" />
+
+        <RadioButton
+
+            android:id="@+id/rb_set"
+            style="@style/RadioButtom_Buttom"
+            android:drawableTop="@drawable/selector_radiobtn_set"
+            android:text="设置"
+
+            />
+    </RadioGroup>
+</RelativeLayout>
